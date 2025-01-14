@@ -1,0 +1,23 @@
+FROG Artifactory instalation and configuration
+===================================================
+1)install java : apt install defalut-jdk
+2)install jfrog link: wget https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/oss/jfrog-artifactory-oss/6.23.41/jfrog-artifactory-oss-6.23.41.zip 
+3)unzip artifactory
+4)cd artifactory-oss-6.23.41/
+5)artifactory-oss-6.23.41/bin
+6)start ./artifactory.sh start
+7)public ip /8081
+
+configuration of J-frog: create an user give admin privilages in jgrog artifactory and the same credentials need to be passed in jenkins manage system under
+			 JFrog Platform Instances give username as JFROG and platfrom url as publicIp of jfrog machine and 8081 port number.
+
+creating jenkins job for jfrog to deploy artifact: 
+step1:create a new item and select maven project click ok.
+step2:go to source management code and git repo url.
+ste3: click on post build actions and select artifact to artifactory and refresh the repository click on ok
+step4 : build the maven project and check artifact deployed in lib-release-local .
+
+
+
+
+curl -umskoushik007@gmail.com:4ad14me411 -T hello-world-war-1.0.0.war  https://mskoushik007.jfrog.io/artifactory/libs-release-local/hello-world-war-1.0.0.war
