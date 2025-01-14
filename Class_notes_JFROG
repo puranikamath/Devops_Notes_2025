@@ -16,8 +16,8 @@ step1:create a new item and select maven project click ok.
 step2:go to source management code and git repo url.
 ste3: click on post build actions and select artifact to artifactory and refresh the repository click on ok
 step4 : build the maven project and check artifact deployed in lib-release-local .
-
-
-
-
 curl -umskoushik007@gmail.com:4ad14me411 -T hello-world-war-1.0.0.war  https://mskoushik007.jfrog.io/artifactory/libs-release-local/hello-world-war-1.0.0.war
+================================================================================
+
+https://mrcloudbook.com/how-to-install-jfrog-artifactory-on-ubuntu-22-o4/
+
